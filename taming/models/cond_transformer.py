@@ -40,8 +40,8 @@ class Net2NetTransformer(pl.LightningModule):
         self.permuter = instantiate_from_config(config=permuter_config)
         self.transformer = instantiate_from_config(config=transformer_config)
 
-        if ckpt_path is not None:
-            self.init_from_ckpt(ckpt_path, ignore_keys=ignore_keys)
+        #if ckpt_path is not None:
+            #self.init_from_ckpt(ckpt_path, ignore_keys=ignore_keys)
         self.downsample_cond_size = downsample_cond_size
         self.pkeep = pkeep
 
